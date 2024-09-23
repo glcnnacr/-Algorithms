@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fatih"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-20 01:03:37 &#214;S"/>
+        <attribute name="created" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMjA7MTI6MzI6MzMgw5ZTOzI5NjI="/>
+        <attribute name="edited" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMjA7MDE6MDM6Mzcgw5ZTOzE7MzA3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arr" type="Integer" array="True" size="50"/>
+            <declare name="index, totalOddNumber, totalEvenNumber, quantityOddNumbers, quantityEvenNumbers" type="Integer" array="False" size=""/>
+            <assign variable="totalOddNumber" expression="0"/>
+            <assign variable="totalEvenNumber" expression="0"/>
+            <assign variable="quantityOddNumbers" expression="0"/>
+            <assign variable="quantityEvenNumbers" expression="0"/>
+            <for variable="index" start="0" end="49" direction="inc" step="1">
+                <assign variable="arr[index]" expression="Random(100)+1"/>
+                <output expression="arr[index]" newline="True"/>
+            </for>
+            <for variable="index" start="0" end="49" direction="inc" step="1">
+                <if expression="arr[index] % 2 == 0">
+                    <then>
+                        <assign variable="quantityEvenNumbers" expression="quantityEvenNumbers + 1"/>
+                        <assign variable="totalEvenNumber" expression="totalEvenNumber + arr[index]"/>
+                    </then>
+                    <else>
+                        <assign variable="quantityOddNumbers" expression="quantityOddNumbers + 1"/>
+                        <assign variable="totalOddNumber" expression="totalOddNumber + arr[index]"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;total number of odd numbers : &quot; &amp;quantityOddNumbers&#13;&#10;&amp;&quot; sum of odd numbers: &quot; &amp;totalOddNumber&#13;&#10;&amp;&quot; total number of even numbers : &quot; &amp;quantityEvenNumbers&#13;&#10;&amp;&quot; sum of even numbers: &quot; &amp;totalEvenNumber" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

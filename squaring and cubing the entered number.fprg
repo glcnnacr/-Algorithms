@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fatih"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 04:03:10 &#214;S"/>
+        <attribute name="created" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMTc7MDM6NTE6NTcgw5ZTOzI5NzU="/>
+        <attribute name="edited" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMTc7MDQ6MDM6MTAgw5ZTOzE7MzA3MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number, squared, cube" type="Integer" array="False" size=""/>
+            <input variable="number"/>
+            <output expression="&quot;squared : &quot; &amp; (number*number)" newline="True"/>
+            <output expression="&quot;cube : &quot; &amp;(number*number*number)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

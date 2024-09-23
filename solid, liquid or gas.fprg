@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fatih"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-19 09:26:14 &#214;&#214;"/>
+        <attribute name="created" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMTg7MTE6NDI6MzIgw5bDljszMDk5"/>
+        <attribute name="edited" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMTk7MDk6MjY6MTQgw5bDljsxOzMyMTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="heat" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the water temperature&quot;" newline="True"/>
+            <input variable="heat"/>
+            <if expression="heat &gt;= 100">
+                <then>
+                    <output expression="&quot;Water is in gaseous form&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="heat &lt;= 0">
+                        <then>
+                            <output expression="&quot;Water is in solid form&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Water is in liquid form&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

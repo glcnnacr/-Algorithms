@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fatih"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-20 03:57:25 &#214;S"/>
+        <attribute name="created" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMjA7MDM6MjE6MDcgw5ZTOzI5NjE="/>
+        <attribute name="edited" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMjA7MDM6NTc6MjUgw5ZTOzE7MzA3OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="index, num1, num2, total, length" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the length of the array&quot;" newline="True"/>
+            <input variable="length"/>
+            <declare name="fibanocci" type="Integer" array="True" size="length"/>
+            <assign variable="num1" expression="1"/>
+            <assign variable="num2" expression="0"/>
+            <for variable="index" start="0" end="length-1" direction="inc" step="1">
+                <assign variable="total" expression="num1 + num2"/>
+                <assign variable="num1" expression="num2"/>
+                <assign variable="num2" expression="total"/>
+                <assign variable="fibanocci[index]" expression="total"/>
+                <output expression="fibanocci[index]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

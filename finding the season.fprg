@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fatih"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-19 09:54:06 &#214;&#214;"/>
+        <attribute name="created" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMTk7MDk6Mjc6MjIgw5bDljszMTA5"/>
+        <attribute name="edited" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMTk7MDk6NTQ6MDYgw5bDljsxOzMyMTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="month" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the month.&quot;" newline="True"/>
+            <input variable="month"/>
+            <if expression="month &gt;= 3 &amp;&amp; month &lt;= 5">
+                <then>
+                    <output expression="&quot;the season is spring&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="month &gt;= 6 &amp;&amp; month &lt;= 8">
+                        <then>
+                            <output expression="&quot;the season is summer&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="month &gt;= 9 &amp;&amp; month &lt;= 11">
+                                <then>
+                                    <output expression="&quot;the season is autumn&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="month = 12 || month &lt;= 2 &amp;&amp; month &gt; 0">
+                                        <then>
+                                            <output expression="&quot;the season is winter&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Invalid value. check the value entered.&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

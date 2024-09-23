@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fatih"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-20 03:20:24 &#214;S"/>
+        <attribute name="created" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMjA7MDM6MDU6MzAgw5ZTOzI5NTk="/>
+        <attribute name="edited" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMjA7MDM6MjA6MjQgw5ZTOzE7MzA2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="arr" type="Integer" array="True" size="10"/>
+            <declare name="index, smallestNumber, largestNumber" type="Integer" array="False" size=""/>
+            <assign variable="smallestNumber" expression="10"/>
+            <assign variable="largestNumber" expression="0"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <assign variable="arr[index]" expression="Random(10)+1"/>
+                <output expression="arr[index]" newline="True"/>
+            </for>
+            <for variable="index" start="1" end="9" direction="inc" step="1">
+                <if expression="arr[index] &gt; arr[index-1]">
+                    <then>
+                        <if expression="arr[index] &gt; largestNumber">
+                            <then>
+                                <assign variable="largestNumber" expression="arr[index]"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="arr[index] &lt; smallestNumber">
+                            <then>
+                                <assign variable="smallestNumber" expression="arr[index]"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;the largest number in the array : &quot; &amp;largestNumber&#13;&#10;&amp;&quot; the smallest number in the array : &quot; &amp;smallestNumber" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

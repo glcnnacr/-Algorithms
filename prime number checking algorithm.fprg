@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fatih"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-20 10:08:44 &#214;&#214;"/>
+        <attribute name="created" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMjA7MDk6NTA6NDYgw5bDljszMTAz"/>
+        <attribute name="edited" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMjA7MTA6MDg6NDQgw5bDljsxOzMyMDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="counter, number, primeControl" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter a number&quot;" newline="True"/>
+            <input variable="number"/>
+            <assign variable="primeControl" expression="0"/>
+            <for variable="counter" start="2" end="number-1" direction="inc" step="1">
+                <if expression="number%counter == 0">
+                    <then>
+                        <assign variable="primeControl" expression="primeControl+1"/>
+                    </then>
+                    <else/>
+                </if>
+                <output expression="number%counter" newline="True"/>
+            </for>
+            <if expression="primeControl == 0">
+                <then>
+                    <output expression="&quot;number is prime&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;number is not prime&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fatih"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-19 11:29:18 &#214;&#214;"/>
+        <attribute name="created" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMTk7MTA6MTk6NTMgw5bDljszMTA2"/>
+        <attribute name="edited" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMTk7MTE6Mjk6MTggw5bDljsyOzMyMTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="midterm1, midterm2, final, average" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter 1st midterm grade&quot;" newline="True"/>
+            <input variable="midterm1"/>
+            <output expression="&quot;Enter 2nd midterm grade&quot;" newline="True"/>
+            <input variable="midterm2"/>
+            <output expression="&quot;Enter the final grade&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="average" expression="(((midterm1+midterm2)/2)*0.3)+(final*0.7)"/>
+            <output expression="average" newline="True"/>
+            <if expression="average &gt;=50">
+                <then>
+                    <output expression="&quot;you passed&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;you stayed&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

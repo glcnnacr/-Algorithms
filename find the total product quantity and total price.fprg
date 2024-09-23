@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="fatih"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-20 12:14:13 &#214;S"/>
+        <attribute name="created" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMjA7MTE6NTY6Mjkgw5bDljszMTAz"/>
+        <attribute name="edited" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMjA7MTI6MTQ6MTMgw5ZTOzE7MzA2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantity, totalQuantity, price, totalPrice" type="Integer" array="False" size=""/>
+            <assign variable="totalQuantity" expression="0"/>
+            <assign variable="totalPrice" expression="0"/>
+            <do expression="quantity &lt;&gt; 0">
+                <output expression="&quot;enter product quantity&quot;" newline="True"/>
+                <input variable="quantity"/>
+                <output expression="&quot;enter product price&quot;" newline="True"/>
+                <input variable="price"/>
+                <assign variable="totalQuantity" expression="totalQuantity + quantity"/>
+                <assign variable="totalPrice" expression="totalPrice + (price*quantity)"/>
+            </do>
+            <output expression="&quot;entered product quantity : &quot; &amp;totalQuantity&#13;&#10; &amp;&quot;  total price : &quot; &amp;totalPrice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

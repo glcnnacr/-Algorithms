@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="G&#252;lcan"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-17 04:11:19 &#214;S"/>
+        <attribute name="created" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMTc7MDQ6MDQ6MDkgw5ZTOzI5NzE="/>
+        <attribute name="edited" value="ZmF0aWg7REVTS1RPUC1HMjYyVko1OzIwMjQtMDktMTc7MDQ6MTE6MTkgw5ZTOzE7MzA3OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="side, perimeter, area" type="Integer" array="False" size=""/>
+            <output expression="&quot; Enter the side length &quot;" newline="True"/>
+            <input variable="side"/>
+            <output expression="&quot;perimeter :&quot; &amp;(4*side)" newline="True"/>
+            <output expression="&quot;area :&quot; &amp;(side*side)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
